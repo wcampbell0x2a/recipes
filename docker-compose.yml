@@ -1,6 +1,7 @@
 services:
   cooklang:
     image: inigochoa/cookcli:latest
+    volumes:
       - ./:/recipes
     ports:
       - 9080:9080
