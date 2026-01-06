@@ -1,8 +1,6 @@
 services:
   cooklang:
-    build: https://github.com/cooklang/cookcli.git
-    command: cook serve
-    volumes:
-      - ./:/data
+    image: inigochoa/cookcli:latest
+      - ./:/recipes
     ports:
       - 9080:9080
